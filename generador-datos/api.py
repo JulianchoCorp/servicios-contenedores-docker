@@ -18,4 +18,4 @@ def createNames():
   return newUsers
 
 if __name__=="__main__":
-  app.run(host="0.0.0.0",port=3008,debug=True)
+  app.run(host="localhost",port=3002,debug=True)
