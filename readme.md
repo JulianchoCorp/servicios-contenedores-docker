@@ -11,6 +11,3 @@ Primero debe de pausar el servidor del back y ejecutar los siguientes comandos: 
 
 # Para iniciar faker api
 - python3 -m pip install Flask, luego python3 -m pip install Faker y por último python3 api.py
-
-## Otras cosas.
--Se reutilizo el trabajo anterior porque al menos el 90% ya estaba realizado (Gestor de paquetes, BD, API).
