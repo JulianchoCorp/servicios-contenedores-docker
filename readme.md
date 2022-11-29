@@ -1,35 +1,16 @@
 # Taller pacial III / Servicios y contenedores
 
-Poryecto hecho por: Julian Ipia Capote / Luis Carlos Aux España
+Poryecto hecho por: Julian Ipia
 
-# Como ejecutar
-- debe de Clonar el proyecto
-- Luego ejecutar el comando -> cd proyecto
-- Luego ejecutar el comando -> cd api
-- Para trabajar de manera local sin ejecutar los contenedores, debe de cambiar el archivo .env de api en las variables de **DB_HOST**="localhost" y **FAKER_HOST**="http://localhost" y correr el servicio BD del docker.
-- De lo contrario, para correr todo el funcionamiento del servicio completo, ejecutar **docker-compose up -d --build**
-- El contenedor tiene el proyecto en react y el otro contenedor que tiene el proyecto en vanilla JS
-- Puerto 3008
+# Para ejecutar
+- Para ejecutar todo, debe de abrir la carpeta api, la ruta es proyecto/api/..
+- Todo se encuentra parametrizado bajo el puerto 3008 en donde funcionan las pruebas, para ejecutar sin ejecutar contenedores, en el archivo .env se cambian **DB_HOST**="localhost" y **FAKER_HOST**="http://localhost" y correr el servicio BD del docker si no quiere ejecutarlo en modo offline debe de ejecutar el servicio de docker por completo de la siguiente manera: **docker-compose up -d --build**
 
-# Como ejecutar los tests
-Con el servidor del backend pausado:
-- ejecutar el comando -> cd api
-- ejecutar el comando -> npm run test
+# Para ejecutar las pruebas
+Primero debe de pausar el servidor del back y ejecutar los siguientes comandos: cd api y luego npm run test, si solamente quiere iniciar el back npm i y luego npm run start o solamente iniciar el front npm i y luego npm start
 
-# Como iniciar solamente el backend
-- ejecutar el comando -> npm i
-- ejecutar el comando -> npm run start
+# Para iniciar faker api
+- python3 -m pip install Flask, luego python3 -m pip install Faker y por último python3 api.py
 
-# Como iniciar faker api
-- ejecutar el comando -> python3 -m pip install Flask
-- ejecutar el comando -> python3 -m pip install Faker
-- ejecutar el comando -> python3 api.py
-
-# Como iniciar el front
-- ejecutar el comando -> npm i
-- ejecutar el comando -> npm start
-
-## Notas
-- Solamente el API de NodeJS cuenta con test, los tests corren correctamente cuando el sv esta off, ya que utilizan la misma instancia de la app para correrse.
-- Se reutilizo el trabajo anterior porque al menos el 90% ya estaba realizado (Gestor de paquetes, BD, API)
-- Se agregaron: tests, se llevo el servicio web a ReactJS
+## Otras cosas.
+-Se reutilizo el trabajo anterior porque al menos el 90% ya estaba realizado (Gestor de paquetes, BD, API).
